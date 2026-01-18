@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #0f2027, #000);
+    color: #00ffcc;
+    min-height: 100vh;
+}
+
+.page {
+    display: none;
+    padding: 40px;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 400px;
+    margin: auto;
+    background: rgba(0, 255, 204, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #00ffcc;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: none;
+}
+
+button {
+    background: #00ffcc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00ccaa;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.status {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.safe {
+    color: #00ff00;
+}
+
+.warning {
+    color: #ffcc00;
+}
+
+.danger {
+    color: #ff4444;
+}

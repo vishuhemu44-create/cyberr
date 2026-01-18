@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Security Defence Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ============ REGISTER PAGE ============ -->
+<div class="page active" id="page1">
+    <h1>📝 Create Account</h1>
+    <div class="card">
+        <input type="text" id="regName" placeholder="Enter Your Name">
+        <input type="password" id="regPass" placeholder="Create Password">
+        <button onclick="register()">Register</button>
+        <p id="regMsg"></p>
+        <button onclick="showPage(2)">Go to Login</button>
+    </div>
+</div>
+
+<!-- ============ LOGIN PAGE ============ -->
+<div class="page" id="page2">
+    <h1>🔐 Login</h1>
+    <div class="card">
+        <input type="text" id="loginName" placeholder="Enter Your Name">
+        <input type="password" id="loginPass" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p id="loginMsg"></p>
+    </div>
+</div>
+
+<!-- ============ DASHBOARD ============ -->
+<div class="page" id="page3">
+    <h1>📊 Dashboard</h1>
+    <div class="nav">
+        <button onclick="showPage(4)">Personal Details</button>
+        <button onclick="showPage(5)">Security Panel</button>
+    </div>
+
+    <div class="card">
+        <p><b>Welcome:</b> <span id="userDisplay"></span></p>
+        <p><b>Status:</b> <span class="safe">System Online</span></p>
+        <p><b>Access Level:</b> User</p>
+    </div>
+</div>
+
+<!-- ============ PERSONAL DETAILS ============ -->
+<div class="page" id="page4">
+    <h1>👤 Personal Details</h1>
+    <div class="nav">
+        <button onclick="showPage(3)">Dashboard</button>
+        <button onclick="showPage(5)">Security Panel</button>
+    </div>
+
+    <div class="card">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
